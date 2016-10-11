@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <title></title>
+</head>
+
+<body>
+      <button type="button" onclick="alert('欢迎');">Click me</button>
+      <button type="button" onclick="myFunction()">Click me1</button>
+      <script type="text/javascript">
+            document.write("<h2>Hello world!<h2>");
+      </script>
+      <p id="demo">
+            Hello
+      </p>
+</body>
+
+<script type="text/javascript">
+      count = 0;
+
+      function myFunction() {
+            demo = document.getElementById("demo");
+            if (count == 0) {
+                  demo.innerHTML = "Hello World!";
+                  demo.style.color = "#f00";
+                  count = 1;
+            } else {
+                  demo.innerHTML = "Hello";
+                  demo.style.color = "#0f0";
+                  count = 0;
+            }
+
+      }
+</script>
+
+</html>
