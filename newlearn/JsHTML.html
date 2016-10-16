@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+      <meta name="name" charset="utf-8" >
+<body>
+
+      <div id="a">
+            <p style="color:green">
+                  zlvjcxzl
+            </p>
+      </div>
+      <h1 onclick="changetext(this)">点击文本!</h1>
+      <script>
+            //注意getElementsByTagName得到的是一个数组取元素时要按数组方式取
+            var x = document.getElementById("a");
+            var y = x.getElementsByTagName("p");
+            document.write('adfas:' + y[0].innerHTML);
+            y[0].style = "color:red";
+            var i = 0
+            function changetext(id) {
+                  if (i){
+                        id.innerHTML = "Ooops!";
+                        i = 0;
+                  } else {
+                        id.innerHTML = "点击文本!";
+                        i = 1;
+                  }
+            }
+      </script>
+
+</body>
+
+</html>
